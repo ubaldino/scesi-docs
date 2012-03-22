@@ -1,4 +1,4 @@
-\documentclass[11pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{report}
 \usepackage[utf8x]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{latexsym,amsmath,amssymb,amsthm}
@@ -11,65 +11,54 @@
 \usepackage{lastpage}
 \usepackage{url}
 \usepackage{anysize} 
-\marginsize{2.5cm}{2.5cm}{1cm}{1.2cm}
+\marginsize{2cm}{2cm}{0.5cm}{2.3cm}
 \usepackage{fancyhdr}
 \usepackage{anyfontsize}
 \usepackage{tocbibind}
-\usepackage{multicol}
-\usepackage{wrapfig}
-\usepackage[rflt]{floatflt}
-\usepackage[abs]{overpic}
-\usepackage{draftcopy}
 \usepackage{eso-pic}
-\usepackage{lipsum}
-
+\usepackage{mathptmx}
+\usepackage{draftwatermark}
+%\usepackage{lipsum}
+%-------------------------
 \pagestyle{fancy}
-\lhead{\footnotesize \slshape \leftmark} \chead{{\Huge Universidad Mayor de San Simón}\\{\huge Facultad de Ciencias y Tecnología}\\Sociedad Científica de Estudiantes de Sistemas e Informática} \rhead{\footnotesize \slshape \rightmark}
-\lfoot{\url{http://scesi.fcyt.umss.edu.bo}} \cfoot{\includegraphics[scale=0.01]{img/scesi.png}} \rfoot{\thepage/\pageref{LastPage}}
+\lhead{}
+\chead{{\tt \Huge \bf Universidad Mayor de San Simón}\\{\tt \huge Facultad de Ciencias y Tecnología}\\{\tt \Large Sociedad Científica de Estudiantes de Sistemas e Informática}}
+\rhead{}
+\lfoot{}
+\cfoot{{\small \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 70776989}\\{\tt Bloque central de la FCyT - tercer piso}\\{\large \tt \url{http://scesi.fcyt.umss.edu.bo}}}
+\rfoot{\thepage/\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.3pt}
-\setlength{\headsep}{2.8\headsep}
-\setlength{\footskip}{1.3\footskip}
+\renewcommand{\footrulewidth}{0.9pt}
+\footskip = 32pt
+\headheight = 56pt
+\headsep = 8pt
+%--------------------------
 
 
 \newcommand\BackgroundPic{
-\put(0,0){
+\put(485,727){
 \parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-%\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{img/scesi.png}%
-\vfill
+%\vfill
+%\centering
+\includegraphics[scale=0.034]{img/logo3.png}%
+%\vfill
 }}}
-\usepackage{mathptmx}
-\usepackage{draftwatermark}
- \usepackage[svgnames]{xcolor}
- \usepackage{fix-cm}
- \usepackage{lipsum}% para generar texto automáticamente
 
-\usepackage{draftwatermark}
-% Use the following to make modification
+%---------------------------
 \SetWatermarkAngle{45}
-\SetWatermarkLightness{0.9}
-\SetWatermarkFontSize{1cm}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkFontSize{1cm}
 \SetWatermarkScale{3}
-%\SetWatermarkText{BORRADOR}
+\SetWatermarkText{\includegraphics[scale=0.05]{img/logo2.png}}
+%--------------------------------------
 
-\SetWatermarkText{\includegraphics[scale=0.07]{img/waterMark.png}}
-%\SetWatermarkLightness{5}
-
-%\title{Gnome}
-%\author{Ubaldino Zurita}
-%\date{\today}
-%\draftcopyName{Marca de aguañoekjfñloasdfjdassdf}{30}
-%\usebackgroundtemplate{includegraphics[width=paperwidth]{img/scesi.png}}
 \begin{document}
-
-
+\AddToShipoutPicture{\BackgroundPic}
 \begin{center}
 {\bf \Large CONVOCATORIA A NUEVOS POSTULANTES A LA SOCIEDAD CIENTÍFICA DE LA CARRERA DE SISTEMAS E INFORMÁTICA
 (SCESI)}\\
 \end{center}
-~\\
+
 {\bf \small ANTECEDENTES}\\
 
 La Sociedad de estudiantes de Sistemas e Informática (SCESI), está conformada por estudiantes de las carreras de Sistemas e Informática, creada con el fin de incentivar y promover la investigación científica en estas carreras y a la vez generar una cultura de investigación.\\
@@ -78,20 +67,20 @@ Durante el primer semestre 2012, La SCESI está trabajando sobre las siguientes 
 \begin{itemize}
 \item Programación Web.
 \item Electrónica – Informática.
-\item Streaming.
+\item Video - Streaming.
 \item Virtualización de Servidores.
 \item Seguridad Informática.
 \end{itemize}
-~\\
+
 {\bf \small REQUISITOS}
 \begin{itemize}
 \item[a.] Ser estudiante de la(s) Carrera(s) de Lic. Informática y/o Sistemas, que cursa regularmente la Universidad.
-\item[b.] Demostrar o manifestar interés por la investigación científica.
-\item[c.] Presentar una carta dirigida al Presidente de la Comisión de Admisión en la que se manifieste que desea ingresar a la Sociedad Científica de Estudiantes de Sistemas Informática como miembro.
-\item[d.] Llenar el formulario de nuevos miembros.
+\item[b.] Demostrar o manifestar interés por la investigación.
+\item[c.] Presentar una carta dirigida al Presidente de la Comisión de Admisión en la que se manifieste que desea ingresar a la Sociedad Científica de Estudiantes de Sistemas Informática como integrante.
+\item[d.] Llenar el formulario de nuevos integrantes.
 \item[e.] Presentarse a la entrevista con la Comisión de admisión en la fecha indicada en la convocatoria.
 \end{itemize}
-~\\
+
 {\bf \small DOCUMENTOS REQUISITOS A PRESENTAR}
 \begin{itemize}
 \item[a.] Presentar Solicitud escrita especificando claramente la solicitud de ingreso así como el motivo que lo lleva a esa decisión a la que se postula:
@@ -102,19 +91,19 @@ Durante el primer semestre 2012, La SCESI está trabajando sobre las siguientes 
 \item[b.] Presentar el Formulario de nuevos Integrantes, correctamente llenado.
 \item[c.] Presentar fotocopia de la matrícula de estudiante regular del presente semestre.
 \end{itemize}
-~\\
+
 {\bf \small FECHA Y LUGAR DE PRESENTACION DE DOCUMENTOS}
 \begin{enumerate}
-\item DE LA FORMA
+\item DE LA FORMA\\
 Presentación de la documentación en sobre manila cerrado y rotulado con:
 \begin{itemize}
 \item[-] Nombre y apellidos completos, dirección, teléfono(s) y e-mail del postulante.
 \item[-] El área de interés, con el cual es postulante se siente motivado.
 \end{itemize}
-\item DE LA FECHA Y LUGAR
+\item DE LA FECHA Y LUGAR\\
 La documentación deberá ser presentada hasta horas 17:00 del día 15 de Abril del 2012, en ambientes de SCESI (Bloque antiguo de FCyT, Último piso, subiendo las gradas lado derecho).
 \end{enumerate}
-~\\
+
 {\bf \small ENTREVISTAS}\\
 
 Las entrevistas se realizarán de acuerdo al cronograma:
@@ -125,34 +114,35 @@ Las entrevistas se realizarán de acuerdo al cronograma:
 \item 14 de abril del 2012
 \end{itemize}
 La asignación de fechas será de acuerdo a la fecha de entrega de documentos, y a criterio de la comisión de admisión.\\
-~\\
+
 {\bf \small SELECCIÓN}\\
 
-Una vez concluido La comisión de Admisión decidirá qué estudiantes serán seleccionados para ingresar al grupo de trabajo, con el área de interés seleccionado de la SCESI, considerando el grado de interés, compromiso.\\
-~\\
+Una vez concluido el trabajo, la comisión de Admisión decidirá qué estudiantes serán seleccionados para ingresar al grupo de trabajo considerando el grado de interés, compromiso y el área  de interés.\\
+
 {\bf \small CRONOGRAMA GENERAL}
+
 \begin{center}
 \begin{tabular}{|l|l|}
 \hline
-Eventos & Fechas\\
+{\bf Eventos} & {\bf Fechas}\\
 \hline
-Publicación de convocatoria. & 16 de Marzo del 2012\\
+Publicación de convocatoria. & 23 de Marzo del 2012\\
 \hline
-Presentación de documentos hasta: & 13 de Abril del 2012\\
+Presentación de documentos hasta: & 20 de Abril del 2012\\
 \hline
-Entrevistas. & 24 de Marzo del 2012 \\
-\hline
-& 31 de Marzo del 2012\\
+Entrevistas. & 31 de Marzo del 2012 \\
 \hline
 & 7 de Abril del 2012\\
 \hline
 & 14 de Abril del 2012\\
 \hline
-Resultados. & 16 de Abril del 2012\\
+& 21 de Abril del 2012\\
+\hline
+Resultados. & 23 de Abril del 2012\\
 \hline
 \end{tabular}
 \end{center}
- \vspace{2cm}
+ \vspace{1.7cm}
 
 \begin{minipage}{0.3\textwidth}
 \begin{center}
@@ -168,10 +158,13 @@ Gonzalo Nina M.\\
 Director Académico\\
 \end{center}
 \end{minipage}
-\vspace{2cm}
+\vspace{1.7cm}
 \begin{center}
 -----------------------\\
 Carlos Caballero\\
 Comisión de Admisión\\
 \end{center}
+
+
+
 \end{document}
