@@ -19,6 +19,7 @@
 \usepackage{mathptmx}
 \usepackage{draftwatermark}
 \usepackage{multirow}
+\usepackage[usenames,dvipsnames]{xcolor}
 %\usepackage{lipsum}
 %-------------------------
 \setlength{\parindent}{0in}
@@ -29,8 +30,12 @@
 \lfoot{}
 \cfoot{{\small \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 70776989}\\{\small \tt Bloque central de la FCyT - tercer piso}\\{\Large \tt \url{http://scesi.fcyt.umss.edu.bo}}}
 \rfoot{\thepage/\pageref{LastPage}}
-\renewcommand{\headrulewidth}{2pt}
-\renewcommand{\footrulewidth}{2pt}
+\renewcommand{\headrule}{{\color{BrickRed}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+\renewcommand{\footrule}{{\color{BrickRed}%
+\vskip-\footruleskip\vskip-\footrulewidth
+\hrule width\headwidth height\footrulewidth\vskip\footruleskip}}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\footrulewidth}{3pt}
 \footskip = 32pt
 \headheight = 56pt
 \headsep = 8pt
