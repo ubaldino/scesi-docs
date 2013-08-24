@@ -1,5 +1,6 @@
 *.out
 *.aux
+*.toc
 *.synctex.gz
 *.log
 *.fdb_latexmk

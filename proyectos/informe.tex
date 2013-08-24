@@ -1,6 +1,6 @@
 \documentclass[11pt,letterpaper]{article}
-\usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{latexsym,amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{pifont}
@@ -11,7 +11,7 @@
 \usepackage{lastpage}
 \usepackage{url}
 \usepackage{anysize}
-\marginsize{2cm}{2cm}{0.5cm}{2.3cm}
+\marginsize{2cm}{2cm}{0.5cm}{1.7cm}
 \usepackage{fancyhdr}
 \usepackage{anyfontsize}
 \usepackage{tocbibind}
@@ -20,57 +20,88 @@
 \usepackage{draftwatermark}
 \usepackage{multirow}
 %\usepackage[usenames,dvipsnames]{xcolor}
-%\usepackage{lipsum}
+\usepackage{blindtext}
+
+
+
+
 %-------------------------
-\setlength{\parindent}{0in}
+
 \pagestyle{fancy}
-\lhead{}
-\chead{{\Huge \tt Universidad Mayor de San Simón}\\{\tt \huge Facultad de Ciencias y Tecnología}\\{\tt \Large Sociedad Científica de Estudiantes de Sistemas e Informática}}
-\rhead{}
-\lfoot{}
-\cfoot{{\small \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 70776989}\\{\small \tt Bloque central de la FCyT - tercer piso}\\{\Large \tt \url{http://www.scesi.org}}}
-\rfoot{\thepage/\pageref{LastPage}}
-\renewcommand{\headrule}{{\color{black}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
-\renewcommand{\footrule}{{\color{black}%
-\vskip-\footruleskip\vskip-\footrulewidth
-\hrule width\headwidth height\footrulewidth\vskip\footruleskip}}
+\lhead{
+}
+\chead{
+	{ \Huge \tt Universidad Mayor de San Simón }\\
+	{ \tt \huge Facultad de Ciencias y Tecnología }\\
+	{ \tt \Large Sociedad Científica de Estudiantes de Sistemas e Informática }
+}
+\rhead{
+}
+\lfoot{
+	{ \scriptsize \tt \url{http://www.scesi.org} } \\
+	{ \scriptsize \tt \url{http://www.scesi.memi.umss.edu.bo} }
+}
+\cfoot{
+	{ \scriptsize \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 72703779 } \\
+	{ \scriptsize \tt Bloque central de la FCyT - ultimo piso } \\
+}
+\rfoot{
+	{ \small \tt root@scesi.org } \\
+ 	\thepage/\pageref{LastPage} 
+}
+
+\renewcommand{\headrule}{
+	{
+		\color{brown}
+		\hrule width\headwidth height\headrulewidth\vskip-\headrulewidth
+	}
+}
+\renewcommand{\footrule}{
+	{
+		\color{brown}%
+		\vskip-\footruleskip\vskip-\footrulewidth
+		\hrule width\headwidth height\footrulewidth\vskip\footruleskip
+	}
+}
 \renewcommand{\headrulewidth}{3pt}
 \renewcommand{\footrulewidth}{3pt}
-\footskip = 32pt
 \headheight = 56pt
-\headsep = 8pt
+\headsep = 15pt
+\footskip = 25pt
 %--------------------------
 
-
 \newcommand\BackgroundPic{
-\put(502,728){
-\parbox[b][\paperheight]{\paperwidth}{%
-%\vfill
-%\centering
-\includegraphics[scale=0.9]{img/1.png}%
-%\vfill
-}}}
+	\put(502,728){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.9]{../img/logoSinFondo.png}
+		}
+	}
+	\put(40,729){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.08]{../img/logoUMSS.jpg}
+		}
+	}
+}
+
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{2mm}
 
 %---------------------------
 \SetWatermarkAngle{0}
 %\SetWatermarkLightness{0.9}
 %\SetWatermarkFontSize{1cm}
 \SetWatermarkScale{3}
-\SetWatermarkText{\includegraphics[scale=0.4]{img/2.png}}
+\SetWatermarkText{\includegraphics[scale=0.4]{../img/waterMark2.png}}
 %--------------------------------------
 
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 %	\tableofcontents
-~\\
-~\\
-\begin{tabular}{|c|c|c|}
-	\hline
-	as & dskfs & sdsd \\
-	\hline	
-\end{tabular}
 
-\vspace{7cm}
+
+
+
+\vspace{3cm}
 
 \begin{minipage}{0.25\textwidth}
 \begin{center}
