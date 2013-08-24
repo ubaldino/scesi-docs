@@ -1,0 +1,97 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{latexsym,amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage[pdftex=true,colorlinks=true,plainpages=false]{hyperref}
+\hypersetup{urlcolor=blue}
+\hypersetup{linkcolor=black}
+\hypersetup{citecolor=black}
+\usepackage{lastpage}
+\usepackage{url}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{0.5cm}{2.3cm}
+\usepackage{fancyhdr}
+\usepackage{anyfontsize}
+\usepackage{tocbibind}
+\usepackage{eso-pic}
+\usepackage{mathptmx}
+\usepackage{draftwatermark}
+\usepackage{multirow}
+%\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage{lipsum}
+%-------------------------
+\setlength{\parindent}{0in}
+\pagestyle{fancy}
+\lhead{}
+\chead{{\Huge \tt Universidad Mayor de San Simón}\\{\tt \huge Facultad de Ciencias y Tecnología}\\{\tt \Large Sociedad Científica de Estudiantes de Sistemas e Informática}}
+\rhead{}
+\lfoot{}
+\cfoot{{\small \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 70776989}\\{\small \tt Bloque central de la FCyT - tercer piso}\\{\Large \tt \url{http://www.scesi.org}}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrule}{{\color{black}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+\renewcommand{\footrule}{{\color{black}%
+\vskip-\footruleskip\vskip-\footrulewidth
+\hrule width\headwidth height\footrulewidth\vskip\footruleskip}}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\footrulewidth}{3pt}
+\footskip = 32pt
+\headheight = 56pt
+\headsep = 8pt
+%--------------------------
+
+
+\newcommand\BackgroundPic{
+\put(502,728){
+\parbox[b][\paperheight]{\paperwidth}{%
+%\vfill
+%\centering
+\includegraphics[scale=0.9]{img/1.png}%
+%\vfill
+}}}
+
+%---------------------------
+\SetWatermarkAngle{0}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkFontSize{1cm}
+\SetWatermarkScale{3}
+\SetWatermarkText{\includegraphics[scale=0.4]{img/2.png}}
+%--------------------------------------
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+%	\tableofcontents
+~\\
+~\\
+\begin{tabular}{|c|c|c|}
+	\hline
+	as & dskfs & sdsd \\
+	\hline	
+\end{tabular}
+
+\vspace{7cm}
+
+\begin{minipage}{0.25\textwidth}
+\begin{center}
+------------------------------\\
+{\bf Gonzalo Nina M.}\\
+Presidente (scesi)\\
+\end{center}
+\end{minipage}
+\begin{minipage}{0.47\textwidth}
+\begin{center}
+------------------------------\\
+{\bf Carlos Caballero}\\
+Jefe de proyecto
+\end{center}
+\end{minipage}
+\begin{minipage}{0.28\textwidth}
+
+\begin{center}
+------------------------------\\
+{\bf Gonzalo Nina M.}\\
+Director Académico\\
+\end{center}
+\end{minipage}
+\end{document}

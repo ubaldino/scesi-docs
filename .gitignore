@@ -1,0 +1,7 @@
+*.out
+*.aux
+*.synctex.gz
+*.log
+*.fdb_latexmk
+sello.png
+firmaGon.png
