@@ -66,8 +66,8 @@
 \renewcommand{\headrulewidth}{3pt}
 \renewcommand{\footrulewidth}{3pt}
 \headheight = 56pt
-\headsep = 15pt
-\footskip = 25pt
+\headsep = 10pt
+\footskip = 28pt
 %--------------------------
 
 \newcommand\BackgroundPic{
@@ -84,7 +84,7 @@
 }
 
 \setlength{\parindent}{0mm}
-\setlength{\parskip}{2mm}
+\setlength{\parskip}{3mm}
 
 %---------------------------
 \SetWatermarkAngle{0}
@@ -99,30 +99,127 @@
 %	\tableofcontents
 
 
+\section{Conformación SCESI}
+La Sociedad científica de sistemas e informática (SCESI), esta conformada por estudiantes de la facultad de ciencias y tecnología afines al área de ciencias de la computación y tecnologías de información y ademas electrónica digital.
+\section{Áreas de investigación aplicadas}
+	
+	\begin{itemize}
+		\item Electrónica con arduino 
+		\item Desarrollo web
+		\item Seguridad informática
+		\item Sistemas operativos
+		\item Programación Funcional
+		\item Desarrollo móvil
+	\end{itemize}
+\section{Trabajos de investigación}
+\begin{description}
+	\item[Yachay]~\\
+		Yachay es una plataforma orientada a la educación que esta implementada en la facultada de ciencias y tecnología para el uso de los estudiantes de las materias cursadas en las carreras de sistemas e informática como:
+		\begin{itemize}
+			\item Elementos de programación 
+			\item Introducción a la programación
+			\item Taller de ingeniería de software
+			\item Sistemas de información
+		\end{itemize}
+		El servicio esta alojado en la siguiente dirección \url{http://yachay.memi.umss.edu.bo}
+	\item[Babel]~\\
+		\emph{Babel} es una de las piezas de software desarrolladas en la sociedad científica de sistemas e informática (UMSS); que esta encaminada a reducir las brechas de acceso a la información que se han percibido entre la comunidad estudiantil.\\
+		Esencialmente consiste en un sitio web desarrollado en el lenguaje de programación PHP, donde los usuarios pueden compartir, ordenar, clasificar, y catalogar archivos en formato PDF.\\
+		Esta solución ha sido concebida con un lógica descentralizada de intercambio, es decir, esta diseñada para crear múltiples conexiones con otras instancias, ya sean publicas o privadas, de modo que el rango de búsqueda pueda propagarse a una variedad aún mayor que la de una única instancia (P2P).\\
+		Se ha estructurado el proyecto en cuatro grandes tareas:
+		\begin{itemize}
+			\item Búsqueda de documentos
+			\item Intercambio de documentos
+			\item Clasificación de documentos
+			\item Valoración de documentos
+		\end{itemize}
+		Después de muchos meses de desarrollo y refactorización de las funciones, se obtuvo una versión estable del sistema. Este se encuentra alojado actualmente en el sitio \url{http://babel.scesi.org}, y se ha publicado el código fuente del mismo en el sitio \url{https://github.com/ccaballero/babel} para la instalación libre de otras instancias descentralizadas.
+	\item[Nonchalant]~\\
+		Este proyecto es una representacion de una terminal en la web, posee intrínsecamente cualidades educativas, primeramente para el grupo de PHP, esta el aprendizaje sobre la construcción de aplicaciones web mas complejas, haciendo uso de las funciones que posee el lenguaje para el diseño de arquitecturas orientadas a objetos.\\
+		También se encuentra inherentemente el aprendizaje avanzado de la linea de comandos y la estructura del mismo sistema operativo GNU/Linux, para el mismo grupo de PHP.Es una herramienta para la introducción al estudio de sistemas operativos de parte de los usuarios iniciantes en GNU/Linux.\\
+		Encontrando el desempeño delante de una terminal, el eficiente aprovechamiento de las funciones disponibles que este posee para la iteracion con el sistema.\\
+		Siendo un sistema educativo que ofrece la necesidad de instalarse una distribucion GNU/Linux. 
+	\item[Cappuchino]~\\
+		Es un sistema para la manipulación de horarios en la facultad de ciencias y tecnología.\\
+		Cada semestre en la facultad de ciencias y tecnología, se pasa por un proceso clásico: compra de matricula, publicación de horarios, e inscripción en el websiss.\\
+		En semestres bajos e intermedios, el proceso de seleccionar las materias que el estudiante se inscribirá en el semestre, posee un gran esfuerzo de análisis, para que todas estas materias no colisionen, y que ademas (si se puede), posean características que le convengan al estudiante, según sus propios criterios y disponibilidades de tiempo.\\
+		En este proceso, se toman en cuenta muchas cosas entre otras:
+		\begin{itemize}
+			\item Minimizar las colisiones entre horarios.
+			\item Preferencia por un grupo en especifico.
+			\item Reducción de los puentes entre clases.
+			\item Restringir según los tiempos de disponibilidad que se posee.
+		\end{itemize}
+		Por lo cual se desarrolló un sistema web que permita a un estudiante seleccionar del amplio conjunto de posibilidades de horarios para un semestre, aquel que considere mas prudente, para agilizar y viabilizar una solución mas consciente.
+		\begin{itemize}
+			\item Automatizar el volcado de información desde los servidores de la facultad hacia el mismo sistema.
+			\item Facilitar a un estudiante la selección de grupos para un semestre.
+			\item Administrar de forma fácil el registro y gestión de usuarios del sistema.
+		\end{itemize}
+		Este sistema se encuentra bajo el siguiente dominio \url{http://cappuchino.scesi.org}
+	\item[Centinela]~\\
+		\textit{Centinela} , esta destinado a ofrecer el control de acceso sobre un grupo determinado de personas y ofrecer datos estadísticos referentes a las entradas y salidas del personal que a su vez se interpretará como informaci\'on muy valiosa al momento de verificar el tiempo de estancia , frecuencia de visita y los permisos de acceso al ambiente.  Pudiendo ser utilizado en diferentes \'areas de la industria donde se tenga que otorgar identificaciones \'unicas a personas que necesitan acceso a ambientes o realizar actividades con permisos previamente establecidos. \\
+		Estas funcionalidades est\'an enlazadas a servicios web que permitir\'an la verificaci\'on en cualquier lugar que se cuente con una conexi\'on a la web, permitiendo la portatibilidad del dispositivo facilitando la implementaci\'on a mayor escala.\\
+		Utilizando \textit{Arduino} como plataforma libre y los respectivos m\'odulos de red y RFID garantizaran establecer un dispositivo compacto y totalmente personalizado gracias a las diferentes librer\'ias que facilitan su funcionamiento y programabilidad. Una vez establecido \textit{Centinela}, la descentralizaci\'on de informaci\'on se la realizará en una aplicaci\'on m\'ovil, permitiendo al personal hacer un seguimiento sobre las actividades que lleva a cabo y evitar posteriores problemas.\\
+	\item[Seguridad informática]~\\
+		El grupo de Seguridad Informática SCESI tiene el objetivo principal de realizar investigaciones y capacitar a los integrantes de la SCESI en principio en el manejo de nuevas tecnologías y posteriormente realizar todo un proceso de investigación /actualización para estar al tanto de las nuevas vulnerabilidades y soluciones que pueden darse en el mundo de la Seguridad Informática, todas las investigaciones realizadas son compartidas al publico en general en las Jornadas de Seguridad Informática una vez al año este evento a nivel departamental ha logrado llevar todo este conocimiento a estudiantes y profesionales en el área.
+	\item[FOS-OBI]~\\
+		FOS-OBI es una remasterización amigable del sistema operativo GNU/Linux bajo la distribución Ubuntu, que esta dividido en dos versiones:
+		\begin{description}
+			\item[OBI/Linux]~\\
+				Este sistema operativo esta orientada a los estudiante de colegios que participan en las \\\underline{olimpiadas científicas de informática} (OBI), para que los estudiantes tengan un entorno de entrenamiento.
+			\item[FOS/Linux]~\\
+				Este sistema operativo esta orientada a los estudiantes que cursan las carreras de Sistemas, Informática, Electrónica en la facultad de Ciencias y Tecnología de la universidad mayor de San Simón 
+		\end{description}
+		Esta remasterización tiene el objetivo de romper las brechas de aprendizaje de un sistema operativo GNU/Linux, de modo  que quien lo use no tenga problemas en configuraciones y solo se dedique al uso del sistema operativo de manera transparente a windows.\\
+		Estas distribuciones se encuentran en la siguiente dirección, \url{http://repoman.scesi.org}
+	\end{description} 
+\section{Eventos realizados}
+La SCESI, realiza eventos anualmente que se detallará a continuación
+\begin{description}
+	\item[Jornadas de seguridad informática]~\\
+		Se realiza cada año en septiembre se trata de unas conferencias evocadas al área de seguridad.
+	\item[Hackmeeting]~\\
+		Es el encuentro nacional de hackers en el año 2012 se realizo en nuestro departamento.
+	\item[Flisol]~\\
+		Festival Latinoamericano de Instalación de Software Libre
+	\item[FirefoxOS]~\\
+		Evento realizado en su segunda versión en Cochabamba donde se aprenden conocimientos de firefox en una appday.
+	\item[Feria Profesiográfica]~\\
+		Feria realizada por la UMSS para estudiantes de colegios evocada a la elección de la formación profesional para los estudiantes
+	\item[Open Season]~\\
+		Charlas de temática abierta sobre tecnología en el área de sistemas e informática.
+	\item[Richard Stallman en Cbba]~\\
+		Se hicieron 2 conferencias magistrales con el guru del GNU LINUX Richard Stallman
 
+\end{description}
+\section{Asistencia a eventos}
+\begin{description}
+	\item[Hackmeeeting]~\\
+		Se asistió en modalidad de expositores y asistentes el 2013 al encuentro de hackers Hackmeeeting realizado en SANTA CRUZ 
+	\item[Conasol]~\\
+	  Se asistió en modalidad de expositores y asistentes al Congreso Nacional de Software Libre, donde se presentan avances sobre software libre y la educación con esta. 
+	\item[Jicctbol]~\\
+		Es un concurso de proyecto que se realiza anualmente y este año se esta realizando en la ciudad e Llallagua en Potosi, a la cual la SCESI se presenta en calidad de concursantes de proyectos y expositores. 
+	\item[Congreso nacional de Informática y telecomunicaciones]~\\
+		Se asistió en modalidad de expositores y asistentes al Congreso nacional de Informática y telecomunicaciones.
+\end{description}
 
 \vspace{3cm}
 
-\begin{minipage}{0.25\textwidth}
+\begin{minipage}{0.5\textwidth}
 \begin{center}
 ------------------------------\\
 {\bf Gonzalo Nina M.}\\
 Presidente (scesi)\\
 \end{center}
 \end{minipage}
-\begin{minipage}{0.47\textwidth}
+\begin{minipage}{0.5\textwidth}
 \begin{center}
 ------------------------------\\
-{\bf Carlos Caballero}\\
-Jefe de proyecto
+{\bf Vladimir Cespedes L.}\\
+Dir. Desarrollo e Investigación\\
 \end{center}
 \end{minipage}
-\begin{minipage}{0.28\textwidth}
 
-\begin{center}
-------------------------------\\
-{\bf Gonzalo Nina M.}\\
-Director Académico\\
-\end{center}
-\end{minipage}
 \end{document}
